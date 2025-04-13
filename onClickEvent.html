@@ -1,0 +1,52 @@
+ <!-- onclick can be added into inside tag too -->
+  <!-- innerHTML for tag value changes
+  src for file related changes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- this buttons are for h1 tag changes -->
+    <button onclick="message1()">Button1</button>
+    <button onclick="message2()">Button2</button>
+
+    <p onclick="message3()">onclick event can be added into inside any html tag too <br></p>
+    <h1 id="forh1">Hello World !!!</h1>
+
+    <!-- and these buttons are for image manupulation  -->
+    <button onclick="catPic()">Cat</button>
+    <button onclick="dogPic()">Dog</button>
+    <br>
+    <img id="forImg" src="#" alt="" height="300px" width="300px">
+
+    <script>
+        let buttonEvent = document.querySelector("#forh1");
+
+        function message1(){
+            buttonEvent.innerHTML = "You pressed button1";
+        }
+
+        function message2(){
+            buttonEvent.innerHTML = "You pressed button2";
+        }
+
+        function message3(){
+            alert("You clicked on an html tag!!!");
+        }
+
+
+        let pic = document.querySelector("#forImg");
+        function catPic(){
+            pic.src = "image/cat.jpg";
+        }
+        function dogPic(){
+            pic.src = "image/dog.jpg";
+        }
+    </script>
+
+</body>
+</html>
