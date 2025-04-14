@@ -5,6 +5,12 @@
 //if a tag is inside another tag then it will be querySelector("1stTagOrClassOrID 2ndTag"); 
 
 
+// DOM two things. Method and property.
+// Method is where there is () first bracket
+// Property is likes: innerHTML, src, link
+// link for style changes. 
+//link.href=" ";  changes href address
+
 
 //const variableName = document.getElementById("");
 // variableName.innerHTML = "Changes what u want"; 

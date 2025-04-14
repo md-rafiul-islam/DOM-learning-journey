@@ -1,0 +1,42 @@
+<!-- key: appendChild(); // takes a parameter. can add text. 
+document.createElement("tagName"); // create a tag
+document.createTextNode("");  // add text inside () . then append it as a child
+
+//remove any tag
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <h1>Hello!</h1>
+        <h1>Hey!</h1>
+    </div>
+
+    <script>
+        let newTag = document.createElement("h1");
+        let text = document.createTextNode("This is new");
+        newTag.appendChild(text);
+        
+
+        //fetch class where we will add this tag
+        let abc = document.querySelector(".hero");
+        abc.appendChild(newTag); // this will add bottom of the class
+
+
+        // remove any tag
+        let tagForHey = document.getElementsByTagName("h1")[1];
+        abc.removeChild(tagForHey);
+
+
+        //add tag anywhere u want ?
+
+
+    </script>
+</body>
+</html>
