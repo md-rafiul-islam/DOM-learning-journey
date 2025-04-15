@@ -35,6 +35,12 @@ document.createTextNode("");  // add text inside () . then append it as a child
 
 
         //add tag anywhere u want ?
+        let anotherTag = document.createElement("h1"); // create another tag
+        text = document.createTextNode("this is the leatest addition"); // add text to the tag
+        anotherTag.appendChild(text); // append text to the new tag
+
+        abc.insertBefore(anotherTag, document.getElementsByTagName("h1")[0]); // insert takes two parameters , first is the which tag and the second is before where u want to add new tag.
+        
 
 
     </script>
