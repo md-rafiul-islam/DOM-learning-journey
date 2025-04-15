@@ -1,3 +1,5 @@
+// https://youtu.be/8WGMULjnR94?si=kpmlcmFkxYGp2xk0
+
 //forgot all "_" just use : document.querySelector("")
 //for class use css style like querySelector(".className")
 //for id querySelector("#id")
