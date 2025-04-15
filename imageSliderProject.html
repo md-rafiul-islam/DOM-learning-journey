@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="prev()">Previous</button>
+    <img src="image/frog.jpg" alt="" height="300px" width="300px">
+    <button onclick="next()">Next</button>
+
+
+    <script>
+        const images = ["image/frog.jpg", "image/dog.jpg", "image/cat.jpg"];
+
+        imgTag = document.querySelector("img");
+
+
+
+        let pos = 0;
+        function next(){
+            ++pos;
+            if(pos==images.length){
+                pos=0;
+            }
+            imgTag.src = images[pos];
+        }
+
+        function prev(){
+            --pos;
+            if(pos<0){
+                pos = images.length-1;
+            }
+            imgTag.src = images[pos];
+        }
+    </script>
+</body>
+</html>
