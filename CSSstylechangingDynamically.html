@@ -1,0 +1,42 @@
+<!-- key: insted of using id.style.color="red" use
+    id.classList.add("style class name");
+    to remove id.classList.remove("style class name"); -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .paraStyle{
+            color : red;
+            font-size: 3rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="para">Document Object Model</p>
+
+    <button onclick="addStyle()">Add Style</button>
+    <button onclick="remvStyle()">Remove Style</button>
+    <script>
+        paraStyle = document.getElementById("para");
+
+        function addStyle(){
+            // paraStyle.style.color = "red";  //it will be  hassle
+            // paraStyle.style.fontSize = "3rem";
+
+            //instead
+            paraStyle.classList.add("paraStyle");
+        }
+
+
+        function remvStyle(){
+            paraStyle.classList.remove("paraStyle");
+        }
+    </script>
+</body>
+</html>
