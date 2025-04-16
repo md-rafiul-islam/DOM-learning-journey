@@ -1,0 +1,37 @@
+<!-- Anonymous function and eventListener~ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .styleh1{
+            font-size: 3rem;
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!!!</h1>
+
+    <script>
+        let HTag = document.querySelector("h1");
+
+         // anonymous function. u don't need to declare function name.
+        HTag.addEventListener("mouseover", function(){ 
+            HTag.innerHTML = "What's up!!!";
+            HTag.classList.add("styleh1");
+        })
+
+        HTag.addEventListener("mouseout", function(){
+            HTag.innerHTML = "Hello World!!!";
+            HTag.classList.remove("styleh1");
+        })
+
+
+    </script>
+</body>
+</html>
